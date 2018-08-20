@@ -43,7 +43,7 @@ public class CheckingAndUncheckingCheckboxTest {
         checkboxes.get(1).click();
         assertFalse(checkboxes.get(1).isSelected());
     }
-    
+
     @After
     public void tearDown() {
         driver.quit();
