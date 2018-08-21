@@ -29,20 +29,20 @@ public class CheckIfElementExistTest {
         driver.findElement(By.linkText("Disappearing Elements")).click();
     }
 
-//    @Test
-//    public void checkIfElementExist() {
-//        boolean exist = isElementExist();
-//        assertTrue(exist);
-//    }
-//
-//    private boolean isElementExist() {
-//        try {
-//            driver.findElement(By.partialLinkText("Gallery"));
-//        } catch (NoSuchElementException e) {
-//            return false;
-//        }
-//        return true;
-//    }
+    @Test
+    public void checkIfElementExist() {
+        boolean exist = isElementExist();
+        assertTrue(exist);
+    }
+
+    private boolean isElementExist() {
+        try {
+            driver.findElement(By.partialLinkText("Gallery"));
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
+    }
 
     @Test
     public void checkIfElementExist2() {
