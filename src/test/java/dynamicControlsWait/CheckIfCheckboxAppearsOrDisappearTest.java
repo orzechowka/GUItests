@@ -26,7 +26,7 @@ public class CheckIfCheckboxAppearsOrDisappearTest {
 
     @Test
     public void checkIfCheckboxDisappear() {
-        WebElement btn = driver.findElement(By.id("btn"));
+        WebElement btn = driver.findElement(By.tagName("button"));
         btn.click();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
